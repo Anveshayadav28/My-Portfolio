@@ -1,27 +1,22 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Added for better box model handling */
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
-/*@media (max-width: 485px){*/
 body {
     background-color: rgb(4, 4, 43);
     color: whitesmoke;
-    font-family: "Poppins", sans-serif;
-  
 }
-/*}
-*/
 
 .nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 80px;
-    background-color:rgb(255, 242, 242)/* rgb(51, 51, 92)*/;
+    background-color: rgb(255, 242, 242);
 }
-
 
 .nav ul {
     display: flex;
@@ -51,42 +46,30 @@ main hr {
     margin: 40px 84px;
 }
 
-
 .left {
     font-size: 1.3rem;
     color: white;
 }
-
-
-/*@media only screen and (max-width: 425px){
-    .firstSection{
-        flex-direction: column;
-    }
-}
-*/
-
 
 .firstSection {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 80px 0px;
-    
 }
 
-
-
-.firstSection>div {
+.firstSection > div {
     width: 35%;
 }
 
 .leftSection {
     font-size: 3rem;
-
 }
-.leftSection .button{
+
+.leftSection .button {
     padding: 50px 0px;
 }
+
 .leftSection .btn {
     padding: 12px;
     background-color: #1e2167;
@@ -109,31 +92,18 @@ main hr {
 #element {
     color: blueviolet;
 }
- 
+
 .secondSection {
-   /* margin-left: 119.094px;
-    margin-right: 119.094px;*/
-   
     max-width: 80vw;
     margin: auto;
     height: 80vh;
 }
-
-@media (min-width: 485px) {
-    .main-container {
-      padding: 10px;
-    }
-    
-  }
-  
-
 
 .secondSection h1 {
     font-size: 1.9rem;
 }
 
 .secondSection .box {
-
     background: white;
     width: 80vw;
     height: 2px;
@@ -142,11 +112,10 @@ main hr {
 }
 
 .secondSection .vertical {
-
     height: 93px;
     width: 1px;
     background-color: white;
-  margin: 0 6vw;
+    margin: 0 6vw;
 }
 
 .text-gray {
@@ -166,69 +135,209 @@ main hr {
     width: 150px;
     font-size: 15px;
 }
-.vertical-desc{
+
+.vertical-desc {
     position: relative;
     top: 86px;
     color: grey;
     width: 150px;
     font-size: 12px;
 }
-footer{
-    background-color: #E6E9AF;
-    color: black;
-   
-}
-.footer{
-    display: flex;
-    padding: 23px 122px;
-    justify-content: space-evenly;
-}
-.footer ul{
-    list-style: none;
-}
-.footer>div{
-    width: 223px;
-}
-footer .footer-rights{
+
+/* Footer Styles */
+footer {
+    background-color: #1e2167;
+    color: white;
+    padding: 20px 0;
     text-align: center;
 }
 
-@media screen and (max-width :1024px) {
-    #navbar {
-        width: 100% !important;
-        display: flex;
-    }
-   .box{
-    flex-direction: column;
-   }
-    .secondSection .vertical{
-        height: unset;
-    }
-    .vertical-title, .vertical-desc{
-        left: 45px;
-    }
-   .footer {
-    display: none;
-   }
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-first,
+.footer-second,
+.footer-third {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 0;
+}
+
+.footer-first h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-second ul,
+.footer-third ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-second ul li,
+.footer-third ul li {
+    margin: 10px 0;
+}
+
+.footer-second ul li a,
+.footer-third ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-second ul li a:hover,
+.footer-third ul li a:hover {
+    color: #fcba03;
+    text-decoration: underline;
+}
+
+.footer-third ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-third ul li {
+    margin: 0;
+}
+
+.footer-third ul li a {
+    font-size: 1.5rem;
+}
+
+.footer-rights {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
     .firstSection {
-        flex-direction: column-reverse;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
-    .leftSection{
+
+    .leftSection,
+    .rightSection {
         width: 100% !important;
-        display: flex;
+        margin: 20px 0;
+    }
+
+    .leftSection .button {
         flex-direction: column;
+        gap: 10px;
+    }
+
+    .secondSection .box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secondSection .vertical {
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .vertical-title,
+    .vertical-desc {
+        left: 0;
+        text-align: center;
+    }
+
+    footer {
+        background-color: rgb(4, 4, 43);
+    }
+    .footer {
+        
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-first,
+    .footer-second,
+    .footer-third {
+        margin: 20px 0;
+    }
+    .footer-rights{
+        display: none;
+    }
+
+    .footer-third ul {
         justify-content: center;
-        align-items: center;
     }
-    .rightSection{
-        width: 721px !important;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem;
     }
-    .secondSection {
-        display: flex;
+
+    .nav-item {
+        padding: 10px 0;
+    }
+
+    .leftSection {
+        font-size: 2rem;
+    }
+
+    .rightSection img {
+        width: 100%;
+        height: auto;
+    }
+
+    .secondSection h1 {
+        font-size: 1.5rem;
+    }
+
+    .vertical-title {
+        font-size: 1.2rem;
+    }
+
+    .vertical-desc {
+        font-size: 1rem;
+    }
+
+    .footer-rights {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .leftSection {
+        font-size: 1.5rem;
+    }
+
+    .leftSection .btn {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    .secondSection h1 {
+        font-size: 1.2rem;
+    }
+
+    .vertical-title {
+        font-size: 1rem;
+    }
+
+    .vertical-desc {
+        font-size: 0.9rem;
+    }
+
+    .footer-third ul {
         flex-direction: column;
-        align-items: center;
-    }
-    body{
-        min-width: fit-content ;
+        gap: 10px;
     }
 }
