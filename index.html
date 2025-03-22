@@ -11,6 +11,18 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111097251-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-111097251-1');
+    </script>
+
+
+<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -48,14 +60,19 @@
     </style>
   </head>
   <body>
+     
+    <script src="/index.js"></script>
+<script src="./navbar.js"></script>
+
+
     <div class="main-container">
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark">
       <a class="navbar-brand" href="#">
          Anvesha's Portfolio
       </a>
-      <button class="navbar-toggler" id="navbar-toggler" type="button" data-toggle="modal" data-target="#sideNav">
-          <span class="navbar-toggler-icon"></span>
-      </button>
+      <button class="navbar-toggler" id="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
@@ -68,13 +85,13 @@
 
 
               <li class="nav-item ">
-                <a class="nav-link" href="./about.html">About Me</a>
+                <a class="nav-link" href="about.html">About Me</a>
             </li>
              
 
 
               <li class="nav-item ">
-                  <a class="nav-link" href="./projects.html">Projects</a>
+                  <a class="nav-link" href="projects.html">Projects</a>
               </li>
 
 
@@ -89,90 +106,15 @@
   </nav>
 
 
- <!---<div class="modal fade right" tabindex="-1" role="dialog" id="sideNav">
-      <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLongTitle">ECell SSTC</h5>
-                  <button type="button" id="close-modal" class="close float-right txt-dark" data-dismiss="modal"
-                      aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                  </button>
-              </div>
-              <div class="modal-body">
-
-
-
-                  <a class="nav-link nav-link-bold" href="./index.html">Home</a>
-
-
-
-                  <a class="nav-link nav-link-disabled" href="#">Our Work ></a>
-
-
-                  <a class="dropdown-item nav-sublink" href="./Saturday.html">SATURDAY ACTIVITIES</a>
-
-
-
-                  <a class="dropdown-item nav-sublink" href="./Talks.html">TALKS AND WORKSHOPS</a>
-
-
-
-                  <a class="dropdown-item nav-sublink" href="./Other.html">OTHER WORKS</a>
-
-
-
-
-
-
-
-                  <a class="nav-link nav-link-disabled" href="#">Our Events ></a>
-
-
-                  <a class="dropdown-item nav-sublink" href="./AD-MAD.html">AD-MAD SHOW</a>
-
-
-
-                  <a class="dropdown-item nav-sublink" href="./One-Dolllar.html">ONE-DOLLAR VENTURE</a>
-
-
-
-                  <a class="dropdown-item nav-sublink" href="./ideathon.html">IDEATHON</a>
-
-
-
-                  <a class="dropdown-item nav-sublink" href="./make-a-thon.html">MAKE-A-THON</a>
-
-
-
-                  <a class="dropdown-item nav-sublink" href="">DISRUPT</a>
-
-
-
-
-
-
-
-                  <a class="nav-link nav-link-bold" href="./Sponsors.html">Our Sponsors</a>
-
-
-
-                  <a class="nav-link nav-link-bold" href="./team.html">Our Team</a>
-
-
-              </div>
-          </div>
-      </div>
-  </div> --->
 
     <main>
       <section class="firstSection">
         <div class="leftSection">
-          Hi,My Name is <span class="purple">Anvesha Yadav</span>
+        <div>  Hi,My Name is <span class="purple">Anvesha</span> </div>
           <div>& I'm a Passionate</div>
           <span id="element"></span>
           <div class="button">
-            <a class="btn btn-primary" href="./resume.html" role="button"> My Resume</a>
+            <a class="btn btn-primary" href="resume.html" role="button"> My Resume</a>
             <a class="btn btn-primary" href="https://github.com/Anveshayadav28?tab=repositories" role="button">Visit My Github</a>
           </div>
         </div>
@@ -236,51 +178,37 @@
         </div>
         <div class="footer-second">
           <ul>
-            <li class="nav-item active">
-              <a class="nav-link" href="./index.html">Home </a>
-            </li>
-
-            <li class="nav-item active">
-              <a class="nav-link" href="./about.html">About Me </a>
-            </li>
-
-            <li class="nav-item active">
-              <a class="nav-link" href="./projects.html">Projects </a>
-            </li>
-
-            <li class="nav-item active">
-              <a class="nav-link" href="./contact.html">Contact Me </a>
-            </li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Me</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./contact.html">Contact Me</a></li>
           </ul>
         </div>
         <div class="footer-third">
-              <ul>
-                <li class="list-inline-item p-2"><a
-                  href="https://github.com/Anveshayadav28?tab=repositories">
-                  <h1><i class="fab fa-github"></i></h1>
-              </a></li>
-
-              <li class="list-inline-item p-2"><a
-                href="https://www.instagram.com/_anvesha,_.yadav_?igsh=NG94bnZ5aWo3bjhp">
-                <h1><i class="fab fa-instagram"></i></h1>
-            </a></li>
-       
-        <li class="list-inline-item p-2"><a href="https://www.linkedin.com/in/anvesha-yadav-51389b298/">
-                <h1><i class="fab fa-linkedin"></i></h1>
-            </a></li>
-
-              </ul>
+          <ul>
+            <li>
+              <a href="https://github.com/Anveshayadav28?tab=repositories">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/_anvesha,_.yadav_?igsh=NG94bnZ5aWo3bjhp">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/anvesha-yadav-51389b298/">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="footer-fourth"></div>
       </div>
-    
       <div class="footer-rights">
         © 2025 | www.anveshasportfolio.com | All Rights Reserved |
       </div>
-    </div>
     </footer>
-<script src="./index.js"></script>
-<script src="./navbar.js"></script>
+
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
       var typed = new Typed("#element", {
@@ -290,3 +218,4 @@
     </script>
   </body>
 </html>
+
