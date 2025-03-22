@@ -231,6 +231,8 @@ footer {
     .rightSection {
         width: 100% !important;
         margin: 20px 0;
+         justify-content: center;
+    }
     }
 
     .leftSection .button {
